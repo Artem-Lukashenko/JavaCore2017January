@@ -1,0 +1,30 @@
+public class Main {
+
+    public static void main(String[] args) {
+        // write your code here
+        int minAge = 5;
+        int maxAge = 15;
+        int sum123;
+        int sum234;
+        int sum341;
+        int sum412;
+        for (int i = minAge; i < maxAge; i++) {
+            for (int j = minAge; j < maxAge; j++) {
+                for (int k = minAge; k < maxAge; k++) {
+                    for (int l = minAge; l < maxAge; l++) {
+                        sum123 = i + j + k;
+                        sum234 = j + k + l;
+                        sum341 = k + l + i;
+                        sum412 = l + i + j;
+                        if (sum123 == 30 && sum234 == 32 && sum341 == 32 && sum412 == 35) {
+                           System.out.println("Возраст 1-го брата" + i);
+                           System.out.println("Возраст 2-го брата" + j);
+                           System.out.println("Возраст 3-го брата" + k);
+                           System.out.println("Возраст 4-го брата" + l);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
