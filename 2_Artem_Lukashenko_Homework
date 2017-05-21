@@ -1,0 +1,37 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        //Напишите возраста ниже
+        int ageVadim =37;
+        int ageVaska =45;
+        int ageMisha =95;
+        if (ageVadim > ageVaska && ageVaska > ageMisha) {
+            System.out.println("Oldest man - " + ageVadim);
+            System.out.println("Middle age man - " + ageVaska);
+            System.out.println("Most young man - " + ageMisha);
+        } else if (ageVaska > ageVadim && ageVadim > ageMisha) {
+            System.out.println("Oldest man - " + ageVaska);
+            System.out.println("Middle age man - " + ageVadim);
+            System.out.println("Most young man - " + ageMisha);
+        } else if (ageMisha > ageVaska && ageVaska > ageVadim) {
+            System.out.println("Oldest man - " + ageMisha);
+            System.out.println("Middle age man - " + ageVaska);
+            System.out.println("Most young man - " + ageVadim);
+        } else if (ageVadim > ageMisha && ageMisha > ageVaska) {
+            System.out.println("Oldest man - " + ageVadim);
+            System.out.println("Middle age man - " + ageMisha);
+            System.out.println("Most young man - " + ageVaska);
+        } else if (ageVaska > ageMisha && ageMisha > ageVadim) {
+            System.out.println("Oldest man - " + ageVaska);
+            System.out.println("Middle age man - " + ageMisha);
+            System.out.println("Most young man - " + ageVadim);
+        } else if (ageMisha > ageVadim && ageVadim > ageVaska) {
+            System.out.println("Oldest man - " + ageMisha);
+            System.out.println("Middle age man - " + ageVadim);
+            System.out.println("Most young man - " + ageVaska);
+        }
+
+    }
+}
