@@ -1,0 +1,11 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        int age = 18;
+        double height =1.8;
+        System.out.println("Коле уже " + age + " лет, он ростом "+ height +" метра.");
+    }
+}
