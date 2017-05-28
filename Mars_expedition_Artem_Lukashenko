@@ -1,0 +1,42 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	int spaceShip, container, box, num_sp, num_cont, i, j,k,l;
+        spaceShip = 11; // вместительность корабля
+        container = 34; // вместительность контейнера
+	    l=1;
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите колличество ящиков: ");
+        box = in.nextInt();// колличество ящиков
+        num_cont = box/container; // нужное колличество контейнеров
+            if (box%container != 0)
+                num_cont++;
+        num_sp = num_cont/spaceShip; // нужное колличество кораблей
+            if (num_cont%spaceShip != 0)
+                num_sp++;
+                System.out.println("Нужно "+num_sp+" кораблей и "+num_cont+" контейнеров");
+        for (i = 1; i <= num_sp; i++){ // цикл загрузки кораблей
+            System.out.println("Корабль "+ i);
+                for (j = 1; j <= spaceShip; j++){ // цикл загрузки контейнеров
+                    System.out.println("Контейнер "+ j);
+                        for (k = l; k <= box; k++){ // цикл загрузки ящиков
+                            System.out.println("Ящик "+ l);
+                            l++;
+                                if (l%container==0) {
+                                    System.out.println("Ящик " + l);
+                                    l++;
+                                    break;
+                                }
+                        }
+                        num_cont = num_cont - 1;
+                        if (num_cont == 0)
+                            break;
+            }
+        }
+
+    }
+}
