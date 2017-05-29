@@ -1,0 +1,13 @@
+public class HelloWorld {
+  public static void main(String[] args) {
+    char ch = 'а';
+    int z = (int)ch;
+            for(int i = 0; i<=512; i++){
+               System.out.println(ch+" "+z);
+               ch++;
+               z = (int)ch;
+               if (ch == 'я'+1)
+               break;
+       }
+  }
+}
