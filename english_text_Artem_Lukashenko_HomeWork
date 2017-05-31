@@ -1,0 +1,27 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+	int a = 1;
+
+        String text = "The Java Development Kit (JDK) is an implementation of either one of the Java Platform," +
+               " Standard Edition; Java Platform, Enterprise Edition or Java Platform, Micro Edition platforms[1]" +
+                " released by Oracle Corporation in the form of a binary product aimed at Java developers on Solaris," +
+                " Linux, macOS or Windows. The JDK includes a private JVM and a few other resources to finish the " +
+                "development of a Java Application.[2] Since the introduction of the Java platform, it has been by " +
+                "far the most widely used Software Development Kit (SDK).[citation needed] On 17 November 2006, Sun " +
+                "announced that they would release it under the GNU General Public License (GPL), thus making it free " +
+                "software. This happened in large part on 8 May 2007, when Sun contributed the source code to the " +
+                "OpenJDK";
+        String[] words = text.split("\\W+");
+
+        for (String s: words) {
+            System.out.println("" + a + " - " + s);
+            a++;
+        }
+        a--;
+        System.out.print("В тексте " + a + " слов");
+        }
+    }
+
